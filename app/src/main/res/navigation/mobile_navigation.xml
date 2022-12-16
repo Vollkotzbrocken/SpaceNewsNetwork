@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/mobile_navigation"
+	app:startDestination="@+id/navigation_start">
+
+	<fragment
+		android:id="@+id/navigation_start"
+		android:name="de.keinesupportanfragen.spacenewsnetwork2.ui.news.NewsEntryFragment"
+		android:label="@string/title_home"
+		tools:layout="@layout/fragment_news_entry_list" />
+
+	<fragment
+		android:id="@+id/navigation_blogs"
+		android:name="de.keinesupportanfragen.spacenewsnetwork2.ui.blogs.BlogEntryFragment"
+		android:label="@string/title_dashboard"
+		tools:layout="@layout/fragment_blog_entry_list" />
+
+	<fragment
+		android:id="@+id/navigation_notifications"
+		android:name="de.keinesupportanfragen.spacenewsnetwork2.ui.notifications.NotificationsFragment"
+		android:label="@string/title_notifications"
+		tools:layout="@layout/fragment_notifications" />
+	<fragment
+		android:id="@+id/navigation_options"
+		android:name="de.keinesupportanfragen.spacenewsnetwork2.ui.options.OptionsFragment"
+		android:label="@string/title_options" />
+</navigation>
